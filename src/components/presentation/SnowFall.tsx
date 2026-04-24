@@ -1,3 +1,4 @@
+'use client';
 import React, { useMemo, ReactNode } from 'react';
 import '@/styles/presentation/snowfall.css';
 
@@ -31,12 +32,10 @@ const Snowfall: React.FC<SnowfallProps> = ({ count = 50, children }) => {
 
   return (
     <div className="snow-wrapper">
-      {/* Content Layer */}
       <div className="content-layer">
         {children}
       </div>
 
-      {/* Snow Layer */}
       <div className="snow-container" aria-hidden="true">
         {snowflakes.map((flake) => (
           <div
