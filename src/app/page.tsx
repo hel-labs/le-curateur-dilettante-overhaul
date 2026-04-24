@@ -11,6 +11,7 @@ import { CurveSeparator } from "@/components/ui/CurveSeperator";
 import { ManifestoClose } from "@/components/landing/ManifestoBottom";
 import { AboutTeaser } from "@/components/landing/About";
 import { ContactTeaser } from "@/components/landing/Contact";
+import { Footer } from "@/components/layouts/Footer";
 
 export default function Home() {
   return (
@@ -37,7 +38,6 @@ export default function Home() {
       <div>
         <ContactTeaser/>
       </div>
-      
       </div>
   );
 }

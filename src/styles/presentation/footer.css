@@ -1,0 +1,138 @@
+/* ─── Animation ──────────────────────────────────────────────────────────── */
+
+.footer-pill {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity   0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-pill.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Shell ───────────────────────────────────────────────────────────────── */
+
+.footer-pill__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30);
+  padding: 0.85rem 1.75rem;
+}
+
+/* ─── Identity ────────────────────────────────────────────────────────────── */
+
+.footer-pill__name {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #f5f0e8;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* ─── Navigation links ────────────────────────────────────────────────────── */
+
+.footer-pill__links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-pill__link {
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: rgba(245, 240, 232, 0.40);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.footer-pill__link:hover {
+  color: rgba(245, 240, 232, 0.90);
+}
+
+.footer-pill__link.is-active {
+  color: rgba(245, 240, 232, 0.90);
+}
+
+.footer-pill__link.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--color-accent, #7eb8a4);
+}
+
+/* ─── Social chips ────────────────────────────────────────────────────────── */
+
+.footer-pill__socials {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-pill__social {
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(126, 184, 164, 0.60);
+  text-decoration: none;
+  padding: 3px 9px;
+  border: 1px solid rgba(126, 184, 164, 0.20);
+  border-radius: 9999px;
+  transition: 
+    color 0.2s ease, 
+    border-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer-pill__social:hover {
+  color: #7eb8a4;
+  border-color: rgba(126, 184, 164, 0.50);
+}
+
+/* ─── Footer bottom ───────────────────────────────────────────────────────── */
+
+.footer-pill__copy {
+  display: block;
+  text-align: center;
+  font-size: 0.52rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(245, 240, 232, 0.16);
+  margin-top: 1rem;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .footer-pill__links {
+    gap: 0.9rem;
+  }
+
+  .footer-pill__inner {
+    border-radius: 1.25rem;
+    padding: 0.85rem 1.25rem;
+  }
+}
