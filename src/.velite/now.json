@@ -1,0 +1,38 @@
+{
+  "lastUpdated": "2025-04-25",
+  "reading": [
+    {
+      "title": "The Book of Disquiet",
+      "author": "Fernando Pessoa",
+      "note": "Returning to it. Each time it means something different."
+    },
+    {
+      "title": "Simulacra and Simulation",
+      "author": "Jean Baudrillard",
+      "note": "Slower going than expected. Appropriately disorienting."
+    }
+  ],
+  "listening": [
+    {
+      "title": "Music for Airports",
+      "artist": "Brian Eno",
+      "note": "For late nights and long reads."
+    },
+    {
+      "title": "Spiegel im Spiegel",
+      "artist": "Arvo Pärt",
+      "note": "One piece, many times."
+    }
+  ],
+  "thinking": [
+    "Whether slowness is a discipline or a temperament — and whether the distinction matters.",
+    "The difference between melancholy and sadness. Melancholy has an object. Sadness does not.",
+    "What it means to finish something. The strange grief of completion."
+  ],
+  "working": [
+    "This journal, always.",
+    "A long essay on the ethics of rereading.",
+    "Several beginnings that have not yet decided what they want to be."
+  ],
+  "body": "const{Fragment:e,jsx:t,jsxs:n}=arguments[0];function _createMdxContent(s){const i={em:\"em\",p:\"p\",...s.components};return n(e,{children:[n(i.p,{children:[\"There is a particular quality to the present moment that resists being written about while it is happening. The \",t(i.em,{children:\"now\"}),\" becomes legible only slightly after — when it has just enough distance to be described without distortion.\"]}),\"\\n\",t(i.p,{children:\"This page is an attempt anyway. An honest record of where things stand.\"}),\"\\n\",t(i.p,{children:\"Updated when something shifts. Which is more often than it should be, and less often than it seems.\"})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};"
+}

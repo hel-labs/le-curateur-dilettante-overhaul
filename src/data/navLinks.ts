@@ -22,3 +22,10 @@ export const navLinksRoot: NavLink[] = [
   { label: 'about',           href: '/about',         icon: PiUser           },
   { label: 'contact',         href: '/contact',       icon: PiPaperPlaneTilt },
 ];
+
+export const siblingNav = [
+  { href: "/about/interests", label: "Interests" },
+  { href: "/about/trivia", label: "Trivia" },
+  { href: "/about/now", label: "Now" },
+  { href: "/about/craft", label: "Craft" },
+];

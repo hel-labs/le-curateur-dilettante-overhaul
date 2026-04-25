@@ -3,3 +3,4 @@
 export { default as chapters } from './chapters.json' with { type: 'json' }
 export { default as entries } from './entries.json' with { type: 'json' }
 export { default as pieces } from './pieces.json' with { type: 'json' }
+export { default as now } from './now.json' with { type: 'json' }

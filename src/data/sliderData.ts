@@ -39,15 +39,15 @@ export const featuredSlides: Slide[] = [
 
 // ── CircularSlider ─────────────────────────────────────────────────────────
 
-export const mythSlides: HeroSlide[] = [
+export const skySlides: HeroSlide[] = [
   {
-    title: 'Chimera',
-    desc: 'The anomaly that defied every category.',
-    image: '/img/image3.jpg',
+    title: '',
+    desc: '',
+    image: '/img/bg1.avif',
   },
   {
-    title: 'Hydra',
-    desc: 'Cut one head, face two more.',
-    image: '/img/image1.jpg',
+    title: '',
+    desc: '',
+    image: '/img/bg2.avif',
   },
 ];
