@@ -51,3 +51,27 @@ export const skySlides: HeroSlide[] = [
     image: '/img/bg2.avif',
   },
 ];
+
+export const marginaliaImages: Slide[] = [
+  {
+    img: '/img/image1.jpg',
+    author: 'hel',
+    title: 'Phoenix',
+    topic: 'about the legendary bird',
+    desc: 'A story of ash and renewal, told at the edge of the known world.',
+    buttons: [
+      { label: 'Read', href: '/stories/phoenix', variant: 'primary' },
+      { label: 'Collection', href: '/collections/mythica', variant: 'outline' },
+    ],
+  },
+  {
+    img: '/img/image2.jpg',
+    author: 'hel',
+    title: 'Minotaur',
+    topic: 'about the labyrinth beast',
+    desc: 'Half man, half myth; wholly misunderstood.',
+    buttons: [
+      { label: 'Read', href: '/stories/minotaur', variant: 'primary' },
+    ],
+  },
+];

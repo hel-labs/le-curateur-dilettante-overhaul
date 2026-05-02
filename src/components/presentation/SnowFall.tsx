@@ -1,5 +1,6 @@
-'use client';
-import React, { useMemo, ReactNode } from 'react';
+'use client'
+
+import React, { useState, useEffect, ReactNode } from 'react';
 import '@/styles/presentation/snowfall.css';
 
 interface Snowflake {
@@ -18,24 +19,25 @@ interface SnowfallProps {
 }
 
 const Snowfall: React.FC<SnowfallProps> = ({ count = 50, children }) => {
-  const snowflakes = useMemo<Snowflake[]>(() => {
-    return Array.from({ length: count }).map((_, i) => ({
-      id: i,
-      left: `${Math.random() * 100}%`,
-      top: `${Math.random() * 100}%`,
-      size: `${Math.floor(Math.random() * 30 + 10)}px`,
-      duration: `${Math.random() * 5 + 5}s`,
-      blur: `${Math.random() * 10}px`,
-      delay: `${Math.random() * 5}s`,
-    }));
+  const [snowflakes, setSnowflakes] = useState<Snowflake[]>([]);
+
+  useEffect(() => {
+    setSnowflakes(
+      Array.from({ length: count }).map((_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`,
+        size: `${Math.floor(Math.random() * 30 + 10)}px`,
+        duration: `${Math.random() * 5 + 5}s`,
+        blur: `${Math.random() * 10}px`,
+        delay: `${Math.random() * 5}s`,
+      }))
+    );
   }, [count]);
 
   return (
     <div className="snow-wrapper">
-      <div className="content-layer">
-        {children}
-      </div>
-
+      <div className="content-layer">{children}</div>
       <div className="snow-container" aria-hidden="true">
         {snowflakes.map((flake) => (
           <div

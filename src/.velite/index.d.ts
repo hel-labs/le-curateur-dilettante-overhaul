@@ -12,6 +12,3 @@ export declare const entries: Entry[]
 
 export type Piece = Collections['pieces']['schema']['_output']
 export declare const pieces: Piece[]
-
-export type Now = Collections['now']['schema']['_output']
-export declare const now: Now

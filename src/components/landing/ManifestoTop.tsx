@@ -29,14 +29,14 @@ export function ManifestoHero() {
         aria-hidden="true"
         className="absolute left-0 bottom-0 font-cormorant font-light select-none pointer-events-none"
         style={{
-          fontSize: "clamp(18rem, 30vw, 36rem)",
+          fontSize: "clamp(7rem, 16vw, 28rem)",
           lineHeight: 0.85,
           color: "color-mix(in srgb, var(--color-accent, #7eb8a4) 5%, transparent)",
           zIndex: 1,
           userSelect: "none",
         }}
       >
-        D
+        DILETTANTE
       </span>
 
       <div
